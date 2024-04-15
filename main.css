@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #FEC35F;
+    --secondary-color: #031826;
+    --text-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Happy Monkey", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.background {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #031826;
+}
+
+.border-frame {
+    width: 98vw;
+    height: 95vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-image: linear-gradient(to right, #FEC35F, #FFFFFF) 20;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.user_name_row {
+    display: flex;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.user_name {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.designation {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.item_list {
+    flex: 1;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.item_list a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color);
+}
